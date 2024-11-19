@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //사용자의 나이를 입력받는다
+    /*
+    1. 사용자의 나이가 0보다 크고 7이하면 0~7세 버스비는 800원 입니다.
+    2. 8살 이상이거나 19살 이하일 경우
+    3. 20살 이상이거나 34이하인 청년은 버스비 1600원
+    4. 35살 이상이거나 59살 이하인 중년은 버스비가 2000원
+    5. 60살 이상이거나 150살 이하인 노년층은 무료입니다.
+    
+    */
+    let age = prompt("나이를 입력하세요");
+
+    if (age >= 0 && age <= 7) {
+      document.write("버스비 800원입니다.");
+    } else if (age >= 8 && age <= 19) {
+      document.write("버스비 1200원입니다.");
+    } else if (age >= 20 && age <= 34) {
+      document.write("버스비 1600원.");
+    } else if (age >= 35 && age <= 59) {
+      document.write("버스비 2000원입니다.");
+    } else if (age >= 60 && age <= 150) {
+      document.write("무료입니다.");
+    } else {
+      document.write("너 누구니?");
+    }
+  </script>
+</body>
+
+</html>

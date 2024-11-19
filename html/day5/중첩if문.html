@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let userId = "worne13";
+    let userPw = "fkrwo123!!";
+
+    let inputId = prompt("아이디 입력");
+    let inputPw = prompt("비번 입력");
+
+    if (userId == inputId) {
+      if (userPw == inputPw) {
+        document.write(userId + "님 반갑습니다");
+      } else {
+        alert("비밀번호가 일치하지 않습니다.");
+      }
+    } else {
+      alert("아이디가 일치하지 않습니다.")
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+    1.사용자의 나이를 입력받기, 신분증 유무를 확인하기
+    2.사용자의 나이가 20살이 넘고 신분증이 있다면 입장 가능
+    3. 사용자의 나이가 18살이 넘고, 신분증이 있다면 입장이 가능하지만 12시에 퇴장해야 함
+    4. 18세 미만, 신분증 없는 고객은 입장이 불가능하다고 알리기
+    이외의 값을 입력하면 관리자에게 문의하세요
+    */
+    let user = prompt("나이를 입력.");
+    let card = confirm("신분증이 있으신가요?");
+
+    if (user >= 20 && card) {
+      document.write("입장 가능합니다.");
+    }
+    else if (user >= 18 && user < 20 && card) {
+      document.write("사용자의 나이가 18살이 넘고, 신분증이 있다면 입장이 가능하지만 12시에 퇴장해야 함")
+    } else if (user < 18 || !card) {
+      document.write("입장이 불가능합니다.");
+    }
+    else {
+      document.write("관리자에게 문의하세요.");
+    }
+  </script>
+</body>
+
+</html>
