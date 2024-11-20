@@ -24,17 +24,18 @@
     let member = confirm("회원인가요?");
 
     if (buyMoney >= 100000) {
+      document.write("100000만원 이상이라사은품이 제공됩니다.<br>");
       if (member) {
-        document.write("사은품이 제공됩니다. 배송비도 무료입니다.");
+        document.write("회원 50000원 이상 구매 고객은 배송비도 무료입니다.");
       } else {
         document.write("사은품이 제공됩니다. 비회원은 배송비 5000원이 부가됩니다.");
       }
     }
-    if (buyMoney >= 50000) {
+    else if (buyMoney >= 50000) {
       if (member) {
         document.write("50000원 이상 구매 고객으로 배송비가 무료입니다.");
       } else {
-        document.write("50000원 이상 구매했지만, 비회원은 배송비 5000원이 부가됩니다.");
+        document.write("비회원은 배송비 5000원이 부가됩니다.");
       }
     } else {
       document.write("50000원 미만 구매로 배송비 5000원이 부가됩니다.");

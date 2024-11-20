@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let level = prompt("난이도를 입력");
+    let exerciseType = prompt("유형을 입력");
+
+    switch (level) {
+      case "높음":
+        switch (exerciseType) {
+          case "무산소":
+            document.write("고강도 무산소 운동인 웨이트를 추천.");
+            break;
+          case "유산소":
+            document.write("고강도 유산소 운동인 마라톤 또는 수영을 추천.");
+            break;
+          default:
+            document.write("유효하지 않은 운동 유형입니다.");
+        }
+        break;
+
+      case "중간":
+        switch (exerciseType) {
+          case "무산소":
+            document.write("맨몸스쿼트를 추천.");
+            break;
+          case "유산소":
+            document.write("자전거 타기, 빨리 걷기를 추천.");
+            break;
+          default:
+            document.write("유효하지 않은 운동 유형입니다.");
+        }
+        break;
+
+      case "낮음":
+        switch (exerciseType) {
+          case "무산소":
+            document.write("스트레칭 또는 1분 플랭크를 추천.");
+            break;
+          case "유산소":
+            document.write("천천히 걷기, 가벼운 요가를 추천.");
+            break;
+          default:
+            document.write("유효하지 않은 운동 유형입니다.");
+        }
+        break;
+
+      default:
+        document.write("유효하지 않은 체력 수준입니다. 낮음, 중간, 높음 중 택 1 입력하세요.");
+    }
+  </script>
+</body>
+
+</html>
