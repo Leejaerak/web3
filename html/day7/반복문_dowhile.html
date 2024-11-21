@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let 변수 = 초기화;
+
+        do{
+            자바스크립트코드;
+            증감식;
+        }while(조건식);
+        */
+       let i =1;
+       do{
+            document.write(`dowhile문 ${i}번 실습중!`);
+            i++
+       } while(i<=10);
+
+       // dowhile문과 while문 차이는 조건 검사 순서에 있어서 차이가 있음
+       // while문은 조건을 먼저 검사한 후에 코드를 실행하고, dowhile문은 코드를 먼저 실행한 후에 검사함.
+       // 그래서 dowhile문과 while문은 최소실행횟수가 다르다.
+       //while문은 처음부터 조건이 flase라면 코드를 한 번도 실행하지 않는 반면 dowhile문은 조건이 처음부터 false라도 최소 1번은 실행함.
+    </script>
+</body>
+</html>
