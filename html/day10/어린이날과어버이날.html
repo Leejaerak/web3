@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //어린이날 추출
+    //어버이날 추출
+    //어버이날 - 어린이날
+    //어린이날과 어버이날은 0일 차이 납니다.
+
+    let childrenDay = new Date("2024-05-05");
+    let parentsDay = new Date("2024-05-08");
+
+
+    let childrenMonth = childrenDay.getMonth() + 1,
+      childrenDate = childrenDay.getDate(),
+      childrenDayOfWeek = childrenDay.getDay();
+
+
+    let parentsMonth = parentsDay.getMonth() + 1,
+      parentsDate = parentsDay.getDate(),
+      parentsDayOfWeek = parentsDay.getDay();
+
+    let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    let dateDifference = (parentsDay - childrenDay) / (1000 * 60 * 60 * 24);
+
+    document.write(`<strong>Children’s Day</strong><br>`);
+    document.write(`Month: ${childrenMonth}<br>`);
+    document.write(`Date: ${childrenDate}<br>`);
+    document.write(`Day of the Week: ${childrenDayOfWeek}<br><br>`);
+
+    document.write(`<strong>Parents’ Day</strong><br>`);
+    document.write(`Month: ${parentsMonth}<br>`);
+    document.write(`Date: ${parentsDate}<br>`);
+    document.write(`Day of the Week: ${parentsDayOfWeek}<br><br>`);
+
+    document.write(`<strong>Date Difference</strong><br>`);
+    document.write(`어린이날과 어버이날의 차이는 ${dateDifference}일 입니다`);
+  </script>
+</body>
+
+</html>
