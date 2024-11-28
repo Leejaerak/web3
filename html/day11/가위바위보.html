@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userPick =  prompt("가위 바위 보 값을 입력");
+        let random = Math.ceil(Math.random()*3);
+
+        let computerPick;
+
+        
+        if(random === 1){
+            computerPick = "가위"
+        }else if(random === 2){
+            computerPick = "바위"
+        }else if(random === 3){
+            computerPick = "보"
+        }
+
+        if(userPick===computerPick){
+            document.write("무승부");
+        }else if(userPick == "바위" && computerPick =="가위"||userPick =="가위"&& computerPick =="보" ||userPick =="보"&& computerPick =="바위"){
+            document.write("유저 승리 컴퓨터는")
+        }else{
+            document.write("컴퓨터 승리")
+        }
+        
+        switch(random){
+            case 1 : computerPick ="가위";
+            break;
+            case 2 : computerPick ="바위";
+            break;
+            case 3 : computerPick ="보";
+            break;
+            default : alert("잘못입력")
+        }
+            
+        
+        
+
+        
+    </script>
+</body>
+</html>
