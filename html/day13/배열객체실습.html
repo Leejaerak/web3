@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //https://github.com/web-class-eunji/web3/blob/main/day10/%EC%88%98%ED%95%99%EA%B0%9D%EC%B2%B4%EC%9D%B4%EB%A1%A0.html#L10C7-L25C1
+        let students = [
+            { name : "엘사", score : 85},
+            { name : "모아나", score : 92},
+            { name : "에리", score : 78},
+            { name : "라푼", score : 63}
+        ]
+        
+        let totalScore = 0;
+        
+        for(let i = 0; i < students.length; i++){
+            totalScore += students[i].score
+        }
+        document.write(totalScore+"<br>")
+       
+        let avgScore = totalScore / students.length
+
+       
+       let roundNum = Math.round(avgScore)
+       document.write(roundNum+"<br>")
+
+       let highScore = 0;
+       let topStudent;
+
+       for (let i = 0; i < students.length; i++) {
+    if (students[i].score > highScore) {
+        highScore = students[i].score;
+        topStudent = students[i].name;
+    }
+}
+document.write(highScore+"<br>")
+document.write(topStudent+"<br>")
+
+
+let passedStudent = [];
+for(let i = 0; i< students.length; i++){
+    if(students[i].score >=roundNum){
+        passedStudent.push(students[i]);
+    }
+}
+for(i= 0; i< passedStudent.length; i++){
+    document.write(`평균이상 학생 :${passedStudent[i].name} (${passedStudent[i].score})<br>`)
+}
+
+
+
+
+       
+    </script>
+</body>
+</html>
