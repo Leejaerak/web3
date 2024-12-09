@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         //문자열객체 이론
@@ -12,7 +14,7 @@
         let text1 = new String("hello String")
         let text2 = "Hello String2";
 
-        
+
         /*
         문자열객체 메서드 종류
 
@@ -54,13 +56,18 @@
         */
 
         let text = "Hello Thank you good luck to you"
-        document.write(text.charAt(16),"<br>")
-        document.write(text.indexOf("you"),"<br>")
-        document.write(text.indexOf("you",16),"<br>")
-        document.write(text.lastIndexOf("you"),"<br>")
-        document.write(text.lastIndexOf("you",25),"<br>")
-        
-</script>
-    
+        document.write(text.charAt(16), "<br>")
+        document.write(text.indexOf("you"), "<br>")
+        document.write(text.indexOf("you", 16), "<br>")
+        document.write(text.lastIndexOf("you"), "<br>")
+        document.write(text.lastIndexOf("you", 25), "<br>")
+
+
+        let setText = text.split(" ");
+        document.write(setText)
+
+    </script>
+
 </body>
+
 </html>
